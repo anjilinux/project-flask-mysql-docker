@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %}
+{% block title %}{{webpage_title}}{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="row text-center">
+	<h4><font color={{highlighted_content_color}}>{{website_name}} - {{website_tagline}}</font></h4>
+	<h1><font color={{highlighted_content_color}}><a href="/">{{website_name}}</font></a></h1>
+	<hr>
+	<p>The Ultimate Aggregator Search Engine - Anonymus Searching</p>
+	<p><a href="/"><img src="static/pic/aggregatorsearch.jpg" width="256"></a></p>
+	<hr>
+	<form method="POST" action="">
+		<input name="contentsearch">
+		<input type="submit" value="Search!">
+	</form>
+	<hr>
+	<p></p>
+	<p><font color={{warning_content_color}}>Privacy:</font> We do not collect or share any personal information from you or from your browser!</p>
+	<p><font color={{warning_content_color}}>Data usage:</font> We do not store your personal data. We do not send you ads. We do not track you.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layouts/base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="row text-center">
+	<h4><font color={{highlighted_content_color}}>{{website_name}} - {{website_tagline}}</font></h4>
+	<h1><font color={{highlighted_content_color}}><a href="/">{{website_name}}</font></a></h1>
+	<hr>
+	<p>The Ultimate Aggregator Search Engine - Anonymus Searching</p>
+	<p><a href="/"><img src="static/pic/aggregatorsearch.jpg" width="256"></a></p>
+	<hr>
+	<h3><font color={{highlighted_content_color}}>Data collected</font></h3>
+	<p><u>The only data we collect is the search term and the date of search</u> (data is anonymously collected).</p>
+	<p>So this way, we only save searches (not in a personally identifiable way), beacuse we do not store IP addresses or unique User identifier strings.</p>
+	<p>We only use aggregated, non-personal search data to improve our services.</p>
+	<hr>
+	<h3><font color={{highlighted_content_color}}>Data do not collected by our site</font></h3>
+	<p><u>We do not collect most of the data.</u> Other search engines save your search history in a personalized way.</p>
+	<p>The only data we collect is above mentioned search term and the date of search (data is anonymously collected).</p>
+	<p>We do not use cookies from your browser.</p>
+	<p><strong><font color={{highlighted_content_color}}>Why is this important?</font></strong></p>
+	<p>When you access our site, your Web browser (any browser) automatically sends information about your device such as your User agent and IP address.</p>
+	<p>Because this information could be used to link you to your personal searches, so we do not log it, and do not sote it in any database.</p>
+	<p>This is not an industry practice.</p>
+	<p><font color={{highlighted_content_color}}>--------------------------------------------</font></p>
+	<p><strong><font color={{highlighted_content_color}}>We respect and protect your privacy!</font></strong></p>
+	<p><font color={{highlighted_content_color}}>--------------------------------------------</font></p>
+	<hr>
+	<h3><font color={{highlighted_content_color}}>Privacy Policy</font></h3>
+	<p><strong>Our Privacy Policy:</strong> <u>We do not collect most of the data.</u> The only data we collect is above mentioned search term and the date of search (data is anonymously collected).</p>
+	<p>We do not use cookies from your browser.</p>
+	<hr>
+	<h3><font color={{highlighted_content_color}}>Terms of Use</font></h3>
+	<p><strong>Terms of Use:</strong> <u>Our Service is free!</u> Privacy Policy is mentioned above.</p>
+	<hr>
+	<p></p>
+	<p><font color={{warning_content_color}}>Privacy:</font> We do not collect or share any personal information from you or from your browser!</p>
+	<p><font color={{warning_content_color}}>Data usage:</font> We do not store your personal data. We do not send you ads. We do not track you.</p>
+</div>
+{% endblock %}
